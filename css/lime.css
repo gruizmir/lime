@@ -13,26 +13,23 @@ body { background: #edeff1; background: #fff; font-family:Lato, sans-serif; };
 	float: none;
 	margin: 0 auto;
 }
-.red-box, .green-box, .purple-box, .blue-box, .grey-box {
+.box {
 	height: 100px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.red-box {
-	background: #c0392b;
-}
-.green-box {
-	background: #2ecc71;
-}
-.purple-box {
-	background: #8e44ad;
-}
-.blue-box {
-	background: #3498db;
-}
-.grey-box {
+.box {
 	background: #95a5a6;
+}
+.join {
+	width: 90%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 footer {
 	padding: 10px 0;
+	background: #95a5a6;
+}
+.top-space {
+	margin-top: 10px;
 }
