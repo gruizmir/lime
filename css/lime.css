@@ -1,0 +1,38 @@
+body { background: #edeff1; background: #fff; font-family:Lato, sans-serif; };
+.slogan-box {
+	float: none;
+	margin: 30px auto;
+}
+.slogan-box h1 {
+	padding: 10px 10px 5px 10px;
+	font-size: 32px;
+	font-weight: weight;
+	color: #2ecc71;
+}
+.content {
+	float: none;
+	margin: 0 auto;
+}
+.red-box, .green-box, .purple-box, .blue-box, .grey-box {
+	height: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.red-box {
+	background: #c0392b;
+}
+.green-box {
+	background: #2ecc71;
+}
+.purple-box {
+	background: #8e44ad;
+}
+.blue-box {
+	background: #3498db;
+}
+.grey-box {
+	background: #95a5a6;
+}
+footer {
+	padding: 10px 0;
+}
