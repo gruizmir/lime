@@ -47,9 +47,16 @@ footer {
 
 .slider-label {
 	background: #55830c;
-	border-bottom: 10px solid #335a09;
+	border-bottom: 5px solid #335a09;
 	color: #fff;
 	padding: 8px;
+}
+
+.first {
+	margin-left: 3px;
+}
+
+.slider {
 	border-left: 3px solid white;
 }
 
