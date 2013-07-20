@@ -1,4 +1,5 @@
-body { background: #edeff1; background: #fff; font-family:Lato, sans-serif; border-top: 10px solid #81b336; };
+body { background: #edeff1; background: #fff; font-family:Lato, sans-serif; border-top: 10px solid #81b336; }
+
 .slogan-box {
 	float: none;
 	margin: 30px auto;
@@ -17,11 +18,53 @@ body { background: #edeff1; background: #fff; font-family:Lato, sans-serif; bord
 	height: 100px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	background: #95a5a6
 }
-.box {
-	background: #95a5a6;
+.infotitle {
+	margin-top: -15px;
+	border-bottom: 8px solid #97cd41;;
 }
-
+.infobox {
+	text-align: center;
+}
+.infobox p {
+	font-size: 24px;
+}
+.infobox li {
+	font-size: 24px;
+	line-height: 30px;
+}
+.left-text {
+	text-align: left;
+}
+.spaced {
+	margin-bottom: 75px;
+	background: #c8cacb;
+	padding: 20px 0;
+}
+.spaced-mini {
+	margin-bottom: 30px;
+	background: #c8cacb;
+	padding: 20px 0;
+}
+.top-space-info {
+	margin-top: 50px;
+}
+.underlined {
+	text-decoration: underline;
+}
+.long-text {
+	line-height: 32px;
+}
+.white {
+	background: #fff;
+}
+.bold-green {
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #81b336;
+}
 .top-menu {
 	margin: 10px 0 0 10px;
 }
@@ -62,6 +105,9 @@ footer {
 }
 .left-space {
 	margin-left: 20px;
+}
+.left-space-big {
+	margin-left: 40px;
 }
 .left-space-mini {
 	margin-left: 10px;

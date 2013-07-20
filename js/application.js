@@ -79,4 +79,14 @@ $(document).ready(function() {
 			}
 		}
 	}).listen(5);
+	// Skrollr
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
 });
