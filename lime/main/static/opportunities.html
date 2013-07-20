@@ -8,5 +8,126 @@
     </ul>
 {% endblock %}
 {% block content %}
+<div class="container content">
+    <h3>Opportunities</h3>
+    <div class="row">
+        <div class="span7 box">
+    	    <img src="/static/img/corporate.jpg" alt="Corporate">
+	    </div>
+        <div class="span5 box">
+	        <span><emph>"Without Lime, I would definitely not be where I am today. Lime connected me to recruiters on a more personal level, an opportunity I would not have had anywhere else. My experience greatly enhanced my relationships with Lime's partners and led to an amazing summer at Google. I was hesitant at first, but I'm so glad I checked out Lime!"</emph></span>
+	        <p class="small-right-justified">
+		        - Penn junior
+	        </p>
+        </div>
+    </div>
+<div>
 
+
+<div class="container content">
+    <div class="row">
+        <div class="span12">
+            <div class="tabbable"> <!-- Only required for left/right tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab"><img src="/static/img/usa.jpg" class="flag_img" alt="USA"></a></li>
+                    <li><a href="#tab2" data-toggle="tab"><img src="/static/img/canada.jpg" class="flag_img" alt="Canada"></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1"> <!-- US-->
+                        <h3>Lime Fellowship</h3>
+                        <div class="container content">
+                            <div class="row">
+                                <div class="span3">
+            		                <p class="message">Every year a group of outstanding students is selected by our corporate partners, and reconnect with them at the Leadership &amp; Development Symposium in New York.</p>
+	                            </div>
+	                            <div class="span7">
+	                                <img src="/static/img/professionals.jpg" alt="Reconnect" class="opps_img">
+	                            </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Scholarships</h3>
+                        <div class="container content">
+                            <div class="row">
+                                <div class="span12">
+            		                <ul>
+	                                    <li>Google Lime Scholarship for Students with Disabilities</li>
+	                                    <li>BMO Capital Markets Lime Connect Equity Through Education Scholarship Program for Students with Disabilities</li>
+                                    </ul>
+	                            </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Jobs and Internships</h3>
+                        <div class="container content">
+                            <div class="row">
+                                <div class="span12">
+                                    {% if user %}
+            		                <ul>
+			                            <li>BMO Commercial Account Manager</li>
+			                            <li>BMO Customer Contact Agent  </li>
+			                            <li>BMO Financial Planner </li>
+		                            </ul>
+		                            {% else %}
+		                                <p><a href="{% url 'django.contrib.auth.views.login' %}?next={{request.path}}">Log in to Lime Network</a> to view current opportunities</p>
+		                            {% endif %}
+	                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- CANADA-->
+                    <div class="tab-pane" id="tab2"> 
+                        <h3>Lime Fellowship</h3>
+                        <div class="container content">
+                            <div class="row">
+                                <div class="span3">
+            		                <p  class="message">Lime Connect's corporate partners value the intellectual capital that is represented in candidates with disabilities, and have worked with us to integrate disability as a full component of their overall diversity strategy.  They have each realized strong hiring success via our partnership, and are excited about connecting with candidates in the Vancouver area.</p>
+	                            </div>
+	                            <div class="span7">
+	                                <img src="http://www.limeconnect.com/imgLib/20110225_RecruitmentEvent.jpg" alt="Reconnect">
+	                            </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Scholarships</h3>
+                        <div class="container content">
+                            <div class="row">
+                                <div class="span12">
+            		                <ul>
+	                                    <li>Google Lime Scholarship for Students with Disabilities</li>
+			                            <li>BMO Financial Group Lime Connect Canada Scholarship and Internship Program for Students with Disabilities</li>
+			                            <li>BMO Capital Markets Lime Connect Equity Through Education Scholarship Program for Students with Disabilities</li>
+			                            <li>IBM Lime Connect Canada Scholarship &amp; Internship Program for Students with Disabilities</li>
+			                            <li>TD Bank Group Lime Connect Canada Scholarship Program for Students with Disabilities</li>
+			                            <li>TD Securities Services Lime Connect Canada Scholarship & Internship Program for Students with Disabilities</li>
+                                    </ul>
+	                            </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Jobs and Internships</h3>
+                        <div class="container content">
+                            <div class="row">
+                                <div class="span12">
+                                    {% if user %}
+            		                <ul>
+			                            <li>BMO Commercial Account Manager</li>
+			                            <li>BMO Customer Contact Agent  </li>
+			                            <li>BMO Financial Planner </li>
+		                            </ul>
+		                            {% else %}
+		                                <p><a href="{% url 'django.contrib.auth.views.login' %}?next={{request.path}}">Log in to Lime Network</a> to view current opportunities</p>
+		                            {% endif %}
+	                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -8,5 +8,140 @@
     </ul>
 {% endblock %}
 {% block content %}
+<div class="container content">
+    <div class="row">
+        <h3>Lime blog - The lowercase d</h3>
+        <!-- RIGHT SIDE - POSTS AND WEBINARS -->
+        <div class="span8 box">
+            <div class="container content">
+                <!-- POSTS -->
+                <div class="row">
+                    <h4>Recent Post</h4>
+                    <div class="span8 blogbox">
+                        <table>
+                            <tr>
+                               <td>
+                                    <h5>Interview with Lime Connect Board member, Shantha Rau Barriga</h5>
+                                    <p><emph>Be a positive example for overcoming challenges &amp; building success</emph></p>
+                                    <p>
+                                        Meet Shantha Rau Barriga, a Lime Connect Founding Board member, as she shares some advice on career, leadership and disability.
+                            			"Be a positive example for overcoming challenges &amp; building success."
+                            			Shantha, thank you for your dedication to Lime Connect. Can you tell us a bit about your career journey? My pleasure. I am the Director of Disability Rights at Human Rights Watch. I graduated from the Fletcher School of Law and Diplomacy at Tufts University and the University of Michigan. I came into this field by...
+                                    </p>
+                                    <p><a href="#">Read More</a></p>
+                                    <p class="post_author">June 29, 2013 in <a>Lessons from the Road</a> by <a>Suzanne Aptman</a></p><!--Use template tags to get date, subject, and author-->
+                               </td>
+                            </tr>
+                            
+                            
+                            <tr>
+                               <td>
+                                    <h5>Spotlight on our Network: What It's Like to be Dyslexic</h5>
+                                    <p>
+                                        In this humorous piece, Hena Haines, Harvard '13 and Lime Connect Fellow, shares the real deal about what life with dyslexia is like. Hena didn't realize she had dyslexia until she was a junior in high school. Here are the 8 things that should have clued her in...
+                                    </p>
+                                    <p><a href="#">Read More</a></p>
+                                    <p class="post_author">June 25, 2013 in <a>Spotlight on our network</a> by <a>Jennifer LaRusso-Leung</a></p><!--Use template tags to get date, subject, and author-->
+                               </td>
+                            </tr>
+                            
+                            
+                            <tr>
+                               <td>
+                                    <h5>Leveling The G.P.A. Playing Field; Google Is Taking a Lead</h5>
+                                    <p><emph>An interview with Laszlo Bock, a Google SVP</emph></p>
+                                    <p>
+                                        Everything from employee job fit to leadership potential to success at work, Laszlo Bock, Google's Senior Vice President for People Operations offers a different perspective in a recent New York Times interview. While Google benefits greatly from data crunching when it comes to product development and improvement, data doesn't seem to be as helpful when it comes to the human side of things. What I find most interesting in this article (and encouraging for...
+                                    </p>
+                                    <p><a href="#">Read More</a></p>
+                                    <p class="post_author">June 20, 2013 in <a>Lime Connect Q &amp; A: Your Questions. Our Answers.</a> by <a>Suzanne Aptman</a></p><!--Use template tags to get date, subject, and author-->
+                               </td>
+                            </tr>
+                        </table>
+                        <p><a>Older posts</a></p>
+                    </div>
+                </div>
+                
+                <!-- WEBINARS - ONLY AUTHENTICATED USERS -->
+                {% if user %}
+                <div class="row">
+                    <h4>Webinars</h4>
+                    <div class="span8 blogbox">
+                        <div class="container content">
+                            <div class="row">
+                                <div class="span3">
+                                    <div class="video_div">
+                                        <img src="/static/img/big_video.jpg" class="big_video">
+                                    </div>
+                            		<p class="webinar_title"> The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain</p>
+                            		<p class="webinar_description">A very brief description of the video.</p>
+                                </div>
+                                <div class="span2">
+                                    <div class="video_div">
+                                        <img src="/static/img/little_video.jpg" class="little_video">
+                                    </div>
+                            		<p class="webinar_title">Acing the Technical Banking Interview</p>
+                                </div>
+                                <div class="span2">
+                                    <div class="video_div">
+                                        <img src="/static/img/little_video.jpg" class="little_video">
+                                    </div>
+                            		<p class="webinar_title">Rule the Resume: How to Make a Great First Impression</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <!-- LEFT SIDE - UPCOMING EVENTS AND TWITTER -->
+        <div class="span4 box">
+            <div class="container content">
+                <!-- EVENTS -->
+                <div class="row">
+                    <h4>Upcoming events</h4>
+                    <div class="span4 blogbox">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <h5>GSR 24HoursOfGood</h5>
+                                    <p><emph>(7/19 9AM - 7/20 9AM)</emph></p>
+                                    <p>Description that we should have write, but nobody was fully awake</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>GSR 24HoursOfGood part 2</h5>
+                                    <p><emph>(7/20 9AM - 7/20 11AM)</emph></p>
+                                    <p>Did I mention we were half asleep?</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- TWITTER -->
+                <div class="row">
+                    <h4>Twitter</h4>
+                    <div class="span4">
+                        <a class="twitter-timeline" href="https://twitter.com/gruiz_skyvortex" data-widget-id="358511630872608768">Tweets por @gruiz_skyvortex</a>
+                        <script>
+                            !function(d,s,id){
+                                var js, fjs = d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+                                if(!d.getElementById(id)){
+                                    js=d.createElement(s);
+                                    js.id=id;
+                                    js.src=p+"://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js,fjs);
+                                }
+                            }(document,"script","twitter-wjs");
+                        </script>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
