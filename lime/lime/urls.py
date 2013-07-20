@@ -8,7 +8,10 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'main.views.mainView', name='home'),
     url(r'^/accounts/profile/', 'main.views.userProfile'),
-    
+    url(r'^opportunities$', 'main.views.oppsView'),
+    url(r'^about$', 'main.views.aboutView'),
+    url(r'^blog$', 'main.views.blogView'),
+    url(r'^partners$', 'main.views.partnersView'),
     # url(r'^lime/', include('lime.foo.urls')),
     url(r'^accounts/register/', 'main.views.register'),
     url(r'^accounts/', include('django.contrib.auth.urls')),

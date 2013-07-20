@@ -30,18 +30,18 @@
 	
 		<div class="container content">
 			<div class="row">
-				<div class="span4"><img src="/static/img/limeconnect.png" alt="Lime Connect logo"/></div>
-				<div class="span6">
+				<div class="span2"><a href="/"><img src="/static/img/limeconnect.png" alt="Lime Connect logo"/></a></div>
+				<div class="span8">
 				    <table id="menu_table">
 				        <tr>
 				            <td>
             					<div class="menu-oom pull-right">
             					    {% block mainmenu %}
 				                    <ul class="nav nav-pills">
-                                        <li class="disabled"><a href="#">ABOUT</a></li>
-                                        <li><a href="#">OPPORTUNITIES</a></li>
-                                        <li><a href="#">BLOG</a></li>
-                                        <li><a href="#">PARTNERS</a></li>
+                                        <li><a href="/about">ABOUT</a></li>
+                                        <li><a href="/opportunities">OPPORTUNITIES</a></li>
+                                        <li><a href="/blogs">BLOG</a></li>
+                                        <li><a href="/partners">PARTNERS</a></li>
                                     </ul>
                                     {% endblock %}
                                 </div>
@@ -66,33 +66,40 @@
 		
 		<div class="container content">
 			<div class="row">
+				<div class="span12 top-statement">
+					rebranding <span class="green">disability</span> through <span class="bold green">achievement</span>
+				</div>
+			</div>
+		</div>
+		<div class="container content">
+			<div class="row">
 				<div class="span12">
 					<div class="row">
 					<ul id="areas">
-						<li>
+						<li class="slider">
 							<img src="/static/img/students.jpg" alt="Students" />
-							<div>
+							<div class="slider-label first">
 								<strong>Lime Students</strong>
 								<p>Scholarships and Awards</p>
 							</div>
 						</li>
-						<li>
+						<li class="slider">
 							<img src="/static/img/professionals.jpg" alt="Professional" />
-							<div>
+							<div class="slider-label">
 								<strong>Professional</strong>
 								<p>Lorem ipsum dolor</p>
 							</div>
 						</li>
-						<li>
-							<img src="/static/img/students.jpg" alt="University" />
-							<div>
+						<li class="slider">
+							<img src="/static/img/university.jpg" alt="University" />
+							<div class="slider-label">
 								<strong>University</strong>
 								<p>Lorem ipsum dolor sit</p>
 							</div>
 						</li>
-						<li>
-							<img src="/static/img/professionals.jpg" alt="Corporate" />
-							<div>
+						<li class="slider">
+							<img src="/static/img/corporate.jpg" alt="Corporate" />
+							<div class="slider-label">
 								<strong>Corporate</strong>
 								<p>Lorem ipsum dolor</p>
 							</div>
@@ -118,7 +125,7 @@
             </div>
         </div>
     </div>
-    
+    <div id="dummy">
     <div class="container content">
 		<div class="row">
 			<div class="span2 box">
@@ -130,12 +137,11 @@
 			    <img id="key_icon" src="/static/img/key.png" alt="connects to">
 			</div>
 			<div class="span5 box">
-				<table>
-				    </tr>
-				        <td><img class="company_icon" src="/static/img/goldman.png" alt="Golden Sachs"></td>
-				        <td><img class="company_icon" src="/static/img/any.png" alt="Do not know"></td>
-				        <td><img class="company_icon" src="/static/img/bloomberg.png" alt="Bloomberg"></td>
-				        <td><img class="company_icon" src="/static/img/google.png" alt="Google"></td>
+				        <img class="company_icon" src="/static/img/goldman.png" alt="Golden Sachs">
+				        <img class="company_icon" src="/static/img/any.png" alt="Do not know">
+				        <img class="company_icon" src="/static/img/bloomberg.png" alt="Bloomberg">
+				        <img class="company_icon" src="/static/img/google.png" alt="Google">
+				        <img class="company_icon" src="/static/img/pepsico.jpg" alt="Google">
 				    </tr>
 				</table>
 			</div>
@@ -143,22 +149,20 @@
 			</div>
 		</div>
 	</div>
-    
+    </div>
 	<div class="container content">
     	
 		<div class="row">
 		<hr id="opp_line">
-		    <div class="span1 box">
+		    <div class="span2 box">
 			</div>
-			<div class="span2 box">
+			<div class="span3 box">
 				<table>
 				    <tr>
 				        <td><img class="desc_icon" src="/static/img/awards.png" alt="awards"></td>
 				        <td><h4>Awards</h4><a href=""> Scholarships </a></br><a> Fellowships </a></td>
 				    </tr>
 				</table>
-			</div>
-			<div class="span1 box">
 			</div>
 			<div class="span3 box">
 				<table>
@@ -168,9 +172,7 @@
 				    </tr>
 				</table>
 			</div>
-			<div class="span1 box">
-			</div>
-			<div class="span2 box" >
+			<div class="span3 box" >
 				<table>
 				    <tr>
 				        <td><img class="desc_icon" src="/static/img/education.png" alt="awards"></td>

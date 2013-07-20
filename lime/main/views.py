@@ -11,7 +11,7 @@ from main.forms import UserDataForm
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.db import IntegrityError
 
-#=== INPUT ===
+#===== NORMAL VIEWS =========
 
 def mainView(request):
     user = None
@@ -19,14 +19,38 @@ def mainView(request):
         user = request.user
     return render_to_response("main.html", {'user':user}, context_instance=RequestContext(request))
 
+def aboutView(request):
+    user = None
+    if request.user.is_authenticated():
+        user = request.user
+    return render_to_response("about.html", {'user':user}, context_instance=RequestContext(request))
+
+def oppsView(request):
+    user = None
+    if request.user.is_authenticated():
+        user = request.user
+    return render_to_response("opportunities.html", {'user':user}, context_instance=RequestContext(request))
+
+def blogView(request):
+    user = None
+    if request.user.is_authenticated():
+        user = request.user
+    return render_to_response("blog.html", {'user':user}, context_instance=RequestContext(request))
+    
+def partnersView(request):
+    user = None
+    if request.user.is_authenticated():
+        user = request.user
+    return render_to_response("partners.html", {'user':user}, context_instance=RequestContext(request))
+
+#====== USER VIEWS ================
+
 def userProfile(request):
     if request.user.is_authenticated():
         user = request.user
         return render_to_response("profile.html", {'user':user}, context_instance=RequestContext(request))
     else:
         return HttpResponseRedirect("/")
-
-
 
 # falta verificar que el email existe anteriormente. Email unico.
 def register(request):

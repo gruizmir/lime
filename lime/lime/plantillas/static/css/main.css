@@ -1,6 +1,8 @@
 .desc_icon {
     max-height:50px;
     max-width:50px;
+    margin:0px 10px 0px 0px;
+    opacity:0.5;
 }
 
 #test_img {
@@ -15,13 +17,14 @@
     max-height:50px;
     max-width:100px;
     margin-right:20px;
+    padding-right:20px;
     margin-top:25px;
     vertical-align:middle;
 }
 
 .company_icon {
     max-height:80px;
-    max-width:100px;
+    max-width:150px;
     padding:10px;
     vertical-align:middle;
 }
@@ -33,18 +36,20 @@
 }
 
 #menu_table{
-    float:right;
+    float:left;
 }
 
 .nav-pills li a{
-    font-size:20px;
+    font-size:23px;
+    color: #81b336;
 }
+
 
 #join_line {
     margin-bottom:-44px;
     border-style:solid;
     border-width:1px;   
-    border-color:#4ea54d;
+    border-color:#81b336;
 }
 
 #opp_line {
