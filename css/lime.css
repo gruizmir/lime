@@ -1,4 +1,4 @@
-body { background: #edeff1; background: #fff; font-family:Lato, sans-serif; };
+body { background: #edeff1; background: #fff; font-family:Lato, sans-serif; border-top: 10px solid #81b336; };
 .slogan-box {
 	float: none;
 	margin: 30px auto;
@@ -32,6 +32,29 @@ footer {
 }
 .top-space {
 	margin-top: 10px;
+}
+
+.top-statement {
+	text-align: right;
+	font-size: 30px;
+	line-height: 34px;
+	padding-bottom: 15px;
+}
+
+.green {
+	color: #81b336;
+}
+
+.slider-label {
+	background: #55830c;
+	border-bottom: 10px solid #335a09;
+	color: #fff;
+	padding: 8px;
+	border-left: 3px solid white;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 /* zAccordion styling */
