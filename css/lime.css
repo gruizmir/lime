@@ -21,6 +21,27 @@ body { background: #edeff1; background: #fff; font-family:Lato, sans-serif; bord
 .box {
 	background: #95a5a6;
 }
+
+.top-menu {
+	margin: 10px 0 0 10px;
+}
+
+.top-menu a {
+	font-size: 22px;
+	line-height: 24px;
+	margin: 5px 20px;
+	color: #81b336;
+}
+
+.top-menu a:link, .top-menu a:visited {
+	color: #81b336;
+}
+
+.top-menu a:hover {
+	color: #67b315;
+	text-decoration: underline;
+}
+
 .join {
 	width: 90%;
 	padding-top: 5%;
@@ -28,17 +49,35 @@ body { background: #edeff1; background: #fff; font-family:Lato, sans-serif; bord
 }
 footer {
 	padding: 10px 0;
-	background: #95a5a6;
+	background: #81b336;
+	color: #fff;
 }
+
+.social-media {
+	text-align: right;
+}
+
 .top-space {
 	margin-top: 10px;
 }
+.left-space {
+	margin-left: 20px;
+}
+.left-space-mini {
+	margin-left: 10px;
+}
+.signup-link {
+	font-size: 12px;
+	margin-right: 6px;
+}
 
-.top-statement {
+.top-statement h1 {
 	text-align: right;
 	font-size: 30px;
-	line-height: 34px;
+	line-height: 20px;
 	padding-bottom: 15px;
+	font-weight: normal;
+	margin-top: -15px;
 }
 
 .green {
@@ -50,6 +89,10 @@ footer {
 	border-bottom: 5px solid #335a09;
 	color: #fff;
 	padding: 8px;
+}
+
+.slider-label a:link, .slider-label a:visited, .slider-label a:hover {
+	color: #fff;
 }
 
 .first {
