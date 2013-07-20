@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <meta charset="utf-8">
+    <title>Lime Connect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+	<meta name="keywords" content="keywords">
+	<meta property="og:title" content="Title" />
+	<meta property="og:description" content="Description" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.limmeconect.org" />
+	<meta property="og:image" content="logo.png" />
+	<meta property="og:site_name" content="Lime Connect" />
+
+    <!-- Loading Bootstrap -->
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Lato font -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+
+	<!--  <link href="css/flat-ui.css" rel="stylesheet"> -->
+    <link href="/static/css/lime.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+  </head>
+  <body>
+	
+		<div class="container content">
+			<div class="row">
+				<div class="span4"><img src="/static/img/limeconnect.png" alt="Lime Connect logo"/></div>
+				<div class="span6">
+				    <table id="menu_table">
+				        <tr>
+				            <td>
+            					<div class="menu-oom pull-right">
+            					    {% block mainmenu %}
+				                    <ul class="nav nav-pills">
+                                        <li class="disabled"><a href="#">ABOUT</a></li>
+                                        <li><a href="#">OPPORTUNITIES</a></li>
+                                        <li><a href="#">BLOG</a></li>
+                                        <li><a href="#">PARTNERS</a></li>
+                                    </ul>
+                                    {% endblock %}
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="span2">
+					<div class="menu-oom pull-right">
+					    {% if user %}
+					        <span> Welcome, <a  href="/accounts/profile">{{user.get_full_name}}</a> | <a  href="{% url 'django.contrib.auth.views.logout' %}?next={{request.path}}">Log Out</a></span>
+					    {% else %}
+					
+						    <a class="btn btn-large btn-success top-space" href="{% url 'django.contrib.auth.views.login' %}?next={{request.path}}">Log in</a>
+					
+					    {% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+		{% block content %}
+		
+		<div class="container content">
+			<div class="row">
+				<div class="span3 box">
+					ONE
+				</div>
+				<div class="span3 box">
+					TWO
+				</div>
+				<div class="span3 box">
+					THREE
+				</div>
+				<div class="span3 box">
+					FOUR
+				</div>
+			</div>
+		</div>
+    
+    
+    
+    <div class="container content">
+        <div class="row">
+        <hr id="join_line">
+            <div class="span4 box">
+            </div>
+            <div class="span4 box">
+            
+                <button class="btn btn-large btn-block  btn-success" type="button">Join Lime Connect!</button>	
+            </div>
+            <div class="span4 box">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container content">
+		<div class="row">
+			<div class="span2 box">
+			</div>
+			<div class="span2 box">
+		        <img id="people" src="/static/img/people.png" alt="disability">
+			</div>
+			<div class="span1 box">
+			    <img id="key_icon" src="/static/img/key.png" alt="connects to">
+			</div>
+			<div class="span5 box">
+				<table>
+				    </tr>
+				        <td><img class="company_icon" src="/static/img/goldman.png" alt="Golden Sachs"></td>
+				        <td><img class="company_icon" src="/static/img/any.png" alt="Do not know"></td>
+				        <td><img class="company_icon" src="/static/img/bloomberg.png" alt="Bloomberg"></td>
+				        <td><img class="company_icon" src="/static/img/google.png" alt="Google"></td>
+				    </tr>
+				</table>
+			</div>
+			<div class="span1 box">
+			</div>
+		</div>
+	</div>
+    
+	<div class="container content">
+    	
+		<div class="row">
+		<hr>
+		    <div class="span1 box">
+			</div>
+			<div class="span2 box">
+				<table>
+				    <tr>
+				        <td><img class="desc_icon" src="/static/img/awards.png" alt="awards"></td>
+				        <td><h4>Awards</h4><a href=""> Scholarships </a></br><a> Fellowships </a></td>
+				    </tr>
+				</table>
+			</div>
+			<div class="span1 box">
+			</div>
+			<div class="span3 box">
+				<table>
+				    <tr>
+				        <td><img class="desc_icon" src="/static/img/opportunities.png" alt="awards"></td>
+				        <td><h4>Opportunities</h4><a href=""> Recruiting </a></br><a> Internships </a></td>
+				    </tr>
+				</table>
+			</div>
+			<div class="span1 box">
+			</div>
+			<div class="span2 box" >
+				<table>
+				    <tr>
+				        <td><img class="desc_icon" src="/static/img/education.png" alt="awards"></td>
+				        <td><h4>Education</h4><a href=""> Webinars </a></br><a> University Outreach </a></td>
+				    </tr>
+				</table>
+			</div>
+			<div class="span1 box">
+			</div>
+		</div>
+	</div>
+	
+	
+	{% endblock %}
+	
+    <footer>
+      <div class="container content">
+			<div class="row" >
+				<div class="span12 box">
+					<span>Lime Connect &copy; 2013</span>
+				</div>
+			</div>
+      </div>
+    </footer>
+
+	<script src="/static/js/jquery-1.8.3.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/application.js"></script>
+  </body>
+</html>
