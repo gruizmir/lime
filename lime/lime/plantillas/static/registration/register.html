@@ -1,8 +1,10 @@
-<html>
-    <head>
-        <title>Lime Connection | User signup</title>
-    </head>
-    </body>
+{% extends "main.html" %}
+{% block content %}
+    <div class="container content">
+		<div class="row">
+		    <div class="span4">    
+		    </div>
+			<div class="span4">
         {% if user_form %}
             <form enctype="multipart/form-data" method="POST" action="/accounts/register/">
                 {% csrf_token %}
@@ -18,5 +20,9 @@
                 <input type="submit" value="Submit" />
             </form>
         {% endif %}
-    </body>
-</html>
+            </div>
+            <div class="span4">    
+		    </div>
+        </div>
+    </div>
+{% endblock %}
