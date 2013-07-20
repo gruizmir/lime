@@ -1,0 +1,38 @@
+body { 
+    background: #fff; 
+    font-family:Lato, 
+    sans-serif; 
+};
+
+.slogan-box {
+	float: none;
+	margin: 30px auto;
+}
+.slogan-box h1 {
+	padding: 10px 10px 5px 10px;
+	font-size: 32px;
+	font-weight: weight;
+	color: #2ecc71;
+}
+.content {
+	float: none;
+	margin: 10px auto;
+	margin-bottom:20px;
+}
+.box {
+	height: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.join {
+	width: 90%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+footer {
+	padding: 10px 0;
+	background: #95a5a6;
+}
+.top-space {
+	margin-top: 10px;
+}

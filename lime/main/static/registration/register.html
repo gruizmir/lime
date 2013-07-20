@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Lime Connection | User signup</title>
+    </head>
+    </body>
+        {% if user_form %}
+            <form enctype="multipart/form-data" method="POST" action="/accounts/register/">
+                {% csrf_token %}
+                <table>
+                {{ user_form.as_table }}
+                {% if data_form %}
+                    {{ data_form.as_table }}
+                {% endif %}
+                {% if existing_mail %}
+                    <p>This email is already registered. </p>
+                {% endif %}
+                </table>
+                <input type="submit" value="Submit" />
+            </form>
+        {% endif %}
+    </body>
+</html>

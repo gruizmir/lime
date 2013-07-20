@@ -8,8 +8,10 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'main.views.mainView', name='home'),
     url(r'^/accounts/profile/', 'main.views.userProfile'),
+    
     # url(r'^lime/', include('lime.foo.urls')),
-
+    url(r'^accounts/register/', 'main.views.register'),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

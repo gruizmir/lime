@@ -1,0 +1,45 @@
+.desc_icon {
+    max-height:50px;
+    max-width:50px;
+}
+
+#test_img {
+    max-height:100px;
+    max-width:100px;
+}
+
+#testimonial {
+}
+
+#key_icon {
+    max-height:50px;
+    max-width:100px;
+    margin-right:20px;
+    margin-top:25px;
+    vertical-align:middle;
+}
+
+.company_icon {
+    max-height:80px;
+    max-width:100px;
+    padding:10px;
+    vertical-align:middle;
+}
+
+#people {
+    max-height:150px;
+    max-width:150px;
+    vertical-align:middle;
+}
+
+#menu_table{
+    float:right;
+}
+
+.nav-pills li a{
+    font-size:20px;
+}
+
+#join_line {
+    margin-bottom:-44px;
+}
