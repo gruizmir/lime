@@ -40,14 +40,18 @@
 				                    <ul class="nav nav-pills">
                                         <li><a href="/about">ABOUT</a></li>
                                         <li><a href="/opportunities">OPPORTUNITIES</a></li>
-                                        <li><a href="/blogs">BLOG</a></li>
+                                        <li><a href="/blog">BLOG</a></li>
                                         <li><a href="/partners">PARTNERS</a></li>
+                                        <li><a href="#">CONTACT</a></li>
                                     </ul>
                                     {% endblock %}
                                 </div>
                             </td>
                         </tr>
                     </table>
+                    <form class="navbar-search pull-left top-space">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
                 </div>
                 <div class="span2">
 					<div class="menu-oom pull-right">
@@ -55,8 +59,8 @@
 					        <span> Welcome, <a  href="/accounts/profile">{{user.get_full_name}}</a> | <a  href="{% url 'django.contrib.auth.views.logout' %}?next={{request.path}}">Log Out</a></span>
 					    {% else %}
 					
-						    <a class="btn btn-large btn-success top-space" href="{% url 'django.contrib.auth.views.login' %}?next={{request.path}}">Log in</a>
-					
+						    <a class="btn btn-large btn-success top-space left-space" href="{% url 'django.contrib.auth.views.login' %}?next={{request.path}}">Log in</a>
+					        <span class="pull-right signup-link">or <a href="/accounts/register/">Sign up</a></span>
 					    {% endif %}
 					</div>
 				</div>

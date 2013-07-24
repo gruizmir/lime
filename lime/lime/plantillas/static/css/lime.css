@@ -23,6 +23,103 @@ body {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+.infotitle {
+	margin-top: -15px;
+	border-bottom: 8px solid #97cd41;;
+}
+.infobox {
+	text-align: center;
+}
+.infobox p {
+	font-size: 24px;
+}
+.infobox li {
+	font-size: 24px;
+	line-height: 30px;
+}
+.left-text {
+	text-align: left;
+}
+.spaced {
+	margin-bottom: 75px;
+	background: #c8cacb;
+	padding: 20px 0;
+}
+.spaced-mini {
+	margin-bottom: 30px;
+	background: #c8cacb;
+	padding: 20px 0;
+}
+.top-space-info {
+	margin-top: 50px;
+}
+.underlined {
+	text-decoration: underline;
+}
+.long-text {
+	line-height: 32px;
+}
+.white {
+	background: #fff;
+}
+.bold-green {
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #81b336;
+}
+.top-menu {
+	margin: 10px 0 0 10px;
+}
+
+.top-menu a {
+	font-size: 22px;
+	line-height: 24px;
+	margin: 5px 20px;
+	color: #81b336;
+}
+
+.top-menu a:link, .top-menu a:visited {
+	color: #81b336;
+}
+
+.top-menu a:hover {
+	color: #67b315;
+	text-decoration: underline;
+}
+
+.social-media {
+	text-align: right;
+}
+
+.top-space {
+	margin-top: 10px;
+}
+.left-space {
+	margin-left: 20px;
+}
+.left-space-big {
+	margin-left: 40px;
+}
+.left-space-mini {
+	margin-left: 10px;
+}
+.signup-link {
+	font-size: 12px;
+	margin-right: 6px;
+}
+
+.top-statement h1 {
+	text-align: right;
+	font-size: 30px;
+	line-height: 20px;
+	padding-bottom: 15px;
+	font-weight: normal;
+	margin-top: -15px;
+}
+
+
 .join {
 	width: 90%;
 	padding-top: 5%;
@@ -85,8 +182,3 @@ footer {
 	#areas {visibility:visible;}
 }
 
-#dummy {
-    display:block;
-    width:100%;
-    height:200px;
-}
